@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/terrible-angular-templates",
+    "public": "dist/terrible-angular-template",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "cleanUrls": true,
     "trailingSlash": false,
