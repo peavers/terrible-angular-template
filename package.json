@@ -5,13 +5,14 @@
   "scripts": {
     "build": "ng build",
     "e2e": "ng e2e",
+    "precommit": "run-s format:fix lint",
     "format:check": "prettier --config ./.prettierrc --list-different \"src/{app,environments,assets}/**/*{.ts,.js,.json,.css,.scss}\"",
     "format:fix": "pretty-quick --staged",
     "lint": "ng lint",
     "ng": "ng",
-    "precommit": "run-s format:fix lint",
     "start": "ng serve",
-    "test": "ng test"
+    "test": "ng test",
+    "build:prod": "ng build --prod"
   },
   "dependencies": {
     "@angular/animations": "~8.2.14",

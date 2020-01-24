@@ -16,3 +16,7 @@ The main workhorse that creates your application.
 
 ## Shared
 Components used across multiple modules. Normally ends up with a bunch of dialog boxes or buttons. 
+
+## Deployments
+GitHub actions is wired up to deploy this to firebase. Uncomment the code in `.github/workspace/main.yml` and add your firebase token to GitHub Actions. 
+Every push to master will be released. 
