@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "terrible-angular-template"
+  "defaultProject": "terrible-angular-template",
+  "cli": {
+    "analytics": "60c33ee0-a019-46e8-a190-fd18cb02fc64"
+  }
 }
