@@ -1,7 +1,7 @@
-import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
-import { AuthService } from "../../core/services/auth.service";
-import { User } from "firebase";
+import {Component, OnInit} from "@angular/core";
+import {Router} from "@angular/router";
+import {AuthService} from "../../core/services/auth.service";
+import {User} from "firebase";
 
 @Component({
   selector: "app-navbar",

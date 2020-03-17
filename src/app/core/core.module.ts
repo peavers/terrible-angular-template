@@ -1,8 +1,8 @@
-import { NgModule, Optional, SkipSelf } from '@angular/core';
-import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import {NgModule, Optional, SkipSelf} from '@angular/core';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 
-import { throwIfAlreadyLoaded } from './guards/module-import.guard';
-import { AuthInterceptor } from './interceptors/auth.interceptor';
+import {throwIfAlreadyLoaded} from './guards/module-import.guard';
+import {AuthInterceptor} from './interceptors/auth.interceptor';
 
 @NgModule({
   imports: [HttpClientModule],

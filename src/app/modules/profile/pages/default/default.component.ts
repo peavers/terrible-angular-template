@@ -1,6 +1,6 @@
-import { Component, OnInit } from "@angular/core";
-import { AuthService } from "../../../../core/services/auth.service";
-import { User } from "firebase";
+import {Component, OnInit} from "@angular/core";
+import {AuthService} from "../../../../core/services/auth.service";
+import {User} from "firebase";
 
 @Component({
   selector: "app-default",

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../core/services/auth.service';
+import {Component, OnInit} from '@angular/core';
+import {AuthService} from '../../core/services/auth.service';
 
 @Component({
   selector: 'app-content-layout',
@@ -7,9 +7,11 @@ import { AuthService } from '../../core/services/auth.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService) {
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   login() {
     this.authService.doGoogleLogin();
