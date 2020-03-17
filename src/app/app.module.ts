@@ -8,23 +8,23 @@ import {ContentLayoutComponent} from "./layout/content-layout/content-layout.com
 import {NavbarComponent} from "./layout/navbar/navbar.component";
 import {LoginComponent} from "./layout/login/login.component";
 import {SharedModule} from "./shared";
-import {MaterialModule} from "./shared/material.module";
 import {AngularFireModule} from "@angular/fire";
 import {environment} from "../environments/environment";
 import {AngularFirestoreModule} from "@angular/fire/firestore";
 import {AngularFireAuthModule} from "@angular/fire/auth";
+import {MaterialModule} from "./shared/material.module";
 
 @NgModule({
   declarations: [AppComponent, ContentLayoutComponent, NavbarComponent, LoginComponent],
   imports: [
-    BrowserModule,
+    AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireAuthModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule,
-    MaterialModule
+    BrowserModule,
+    MaterialModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

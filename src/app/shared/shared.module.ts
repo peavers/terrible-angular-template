@@ -2,7 +2,6 @@ import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
-import {MaterialModule} from "./material.module";
 
 @NgModule({
   imports: [
@@ -10,8 +9,6 @@ import {MaterialModule} from "./material.module";
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    MaterialModule,
-    ReactiveFormsModule
   ],
   declarations: [],
   exports: [
@@ -21,7 +18,7 @@ import {MaterialModule} from "./material.module";
     RouterModule
   ],
   entryComponents: [],
-  providers: [MaterialModule]
+  providers: []
 })
 export class SharedModule {
 }
