@@ -2,6 +2,7 @@ import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
 import {AuthService} from "../../core/services/auth.service";
 import {User} from "firebase";
+import {Observable} from "rxjs";
 
 @Component({
   selector: "app-navbar",
@@ -10,7 +11,7 @@ import {User} from "firebase";
 })
 export class NavbarComponent implements OnInit {
 
-  user: User;
+  user: Observable<User | null> = new Observable<User | null>();
 
   constructor(
     private router: Router,
@@ -22,7 +23,7 @@ export class NavbarComponent implements OnInit {
     this.user = this.authService.getUser();
   }
 
-  googleLogout() {
+  logout() {
     this.authService.logout();
   }
 }

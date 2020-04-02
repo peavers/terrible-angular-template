@@ -13,7 +13,7 @@
     </div>
 
     <div class="navbar-item">
-      <div class="profile-button">
+      <div class="profile-button" *ngIf="user | async">
         <button [matMenuTriggerFor]="settingsMenu" mat-icon-button>
           <mat-icon>more_vert</mat-icon>
         </button>
@@ -23,5 +23,5 @@
 </nav>
 
 <mat-menu #settingsMenu="matMenu">
-  <button (click)="googleLogout()" mat-menu-item>Logout</button>
+  <button (click)="logout()" mat-menu-item>Logout</button>
 </mat-menu>

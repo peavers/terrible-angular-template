@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "terrible-angular-template"
+  },
+  "targets": {
+    "terrible-angular-template": {
+      "hosting": {
+        "terrible-angular-template": [
+          "terrible-angular-template"
+        ]
+      }
+    }
   }
 }

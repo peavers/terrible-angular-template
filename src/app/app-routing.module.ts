@@ -1,11 +1,7 @@
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
-import {
-  AngularFireAuthGuard,
-  AngularFireAuthGuardModule,
-  redirectLoggedInTo,
-  redirectUnauthorizedTo
-} from '@angular/fire/auth-guard';
+import { AngularFireAuthGuard, hasCustomClaim, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/auth-guard';
+
 import {LoginComponent} from './layout/login/login.component';
 import {CONTENT_ROUTES} from './shared';
 import {ContentLayoutComponent} from './layout/content-layout/content-layout.component';
@@ -31,7 +27,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    AngularFireAuthGuardModule,
     RouterModule.forRoot(routes, {
       useHash: false,
       onSameUrlNavigation: 'reload'
