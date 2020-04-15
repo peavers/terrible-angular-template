@@ -12,7 +12,8 @@
     "ng": "ng",
     "start": "ng serve",
     "test": "ng test",
-    "build:prod": "ng build --prod"
+    "build:prod": "ng build --prod",
+    "deploy:prod": "ng build --prod"
   },
   "dependencies": {
     "@angular/animations": "~9.1.1",
@@ -63,3 +64,5 @@
     "inquirer-autocomplete-prompt": "^1.0.1"
   }
 }
+
+
