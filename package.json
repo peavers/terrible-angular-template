@@ -12,7 +12,6 @@
     "ng": "ng",
     "start": "ng serve",
     "test": "ng test",
-    "build:prod": "ng build --prod",
     "deploy:prod": "ng build --prod"
   },
   "dependencies": {
