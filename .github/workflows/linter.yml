@@ -1,15 +1,13 @@
 ---
+name: Lint codebase
 on:
   push:
-    branches-ignore: [master]
-  pull_request:
-    branches: [master]
+    branches:
+      - master
 
 jobs:
   build:
-    # Name the Job
-    name: Lint Code Base
-    # Set the agent to run on
+    name: Run super-linter
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code

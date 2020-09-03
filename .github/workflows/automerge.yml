@@ -1,7 +1,6 @@
 ---
-name: automerge on pull request
-
-on: [pull_request]
+name: Automerge on pull request
+on: [ pull_request ]
 
 jobs:
   automerge:
@@ -9,7 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]'
     steps:
-
       - name: merge
         uses: actions/github-script@v3
         with:
