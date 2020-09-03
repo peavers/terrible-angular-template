@@ -1,5 +1,5 @@
 ---
-name: Build & Release
+name: Release
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Build & Release
+    name: Release
     runs-on: ubuntu-latest
     strategy:
       matrix:
