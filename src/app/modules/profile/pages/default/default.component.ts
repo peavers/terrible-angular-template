@@ -1,12 +1,15 @@
-import {Component, OnInit} from "@angular/core";
-import {AuthService} from "../../../../core/services/auth.service";
-import {User} from "firebase";
-import {Observable} from "rxjs";
+import {Component, OnInit} from '@angular/core';
+import {AuthService} from '../../../../core/services/auth.service';
+
+import {Observable} from 'rxjs';
+import firebase from 'firebase';
+
+import User = firebase.User;
 
 @Component({
-  selector: "app-default",
-  templateUrl: "./default.component.html",
-  styleUrls: ["./default.component.scss"]
+  selector: 'app-default',
+  templateUrl: './default.component.html',
+  styleUrls: ['./default.component.scss']
 })
 export class DefaultComponent implements OnInit {
 
