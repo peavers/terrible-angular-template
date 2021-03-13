@@ -28,9 +28,10 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      useHash: false,
-      onSameUrlNavigation: 'reload'
-    })
+    useHash: false,
+    onSameUrlNavigation: 'reload',
+    relativeLinkResolution: 'legacy'
+})
   ],
   exports: [RouterModule],
   providers: [AngularFireAuthGuard]
